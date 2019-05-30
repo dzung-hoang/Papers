@@ -73,6 +73,9 @@ Splash 2 is an attached parallel processor in which the computing eZements are u
 
 ### [Searching Genetic Databases on Splash 2](fccm93.pdf)
 
+**_This paper was recognized as one of the 25 most significant papers from the first 20 years of IEEE International Symposium on Field-Programmable Custom Computing Machines (FCCM)._**
+http://www.tcfpga.org/fccm20/fccm20endorsements.pdf
+
 In this paper, we describe two systolic arrays for computing the edit distance between two genetic sequences using a well-known dynamic programming algorithm. The systolic arrays have been implemented for the Splash 2 programmable logic array, and are intended to be used for database searching. Simulations indicate that that the faster Splash 2 implementation can search a database at a rate of 12 million characters per second, several orders of magnitude faster than implementations of the dynamic programming algorithm on conventional computers.
 
 ```
@@ -86,9 +89,6 @@ In this paper, we describe two systolic arrays for computing the edit distance b
     pages="185--192",
 }
 ```
-
-*This paper was recognized as one of the 25 most significant papers from the first 20 years of IEEE International Symposium on Field-Programmable Custom Computing Machines (FCCM).*
-http://www.tcfpga.org/fccm20/fccm20endorsements.pdf
 
 ## Text Compression
 
