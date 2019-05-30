@@ -188,19 +188,29 @@ provided for coders that operate within the H.261 standard.
 
 ```
 
-### [Rate-Distortion Optimizations for Motion Estimation in Low-Bitrate Video Coding](dvc96.pdf)
+### [Rate-Distortion Optimizations for Motion Estimation in Low-Bitrate Video Coding (DVC'96)](dvc96.pdf)
+### [Rate-Distortion Optimizations for Motion Estimation in Low-Bitrate Video Coding (TechRept)](cs-1995-16.pdf)
 
 We make a case that taking the number of bits to code each motion vector into account when estimating motion for video compression results in significantly better performance at low bit rates, using simulation studies on established benchmark videos. First, by modifying a "vanilla" implementation of the H.261 standard, we show that choosing motion vectors explicitly to minimize rate (in a greedy manner), subject to implicit constraints on distortion, yields better rate-distortion tradeoffs than minimizing notions of prediction error. Locally minimizing a linear combination of rate and distortion results in further improvements. Using a heuristic function of the prediction error and the motion vector code-length results in compression performance comparable to the more computationally intensive coders while requiring a practically small amount of computation.  We also show that making coding control decisions to minimize rate yields further improvements.
 
 ```
 @inproceedings{
     HLV96a,
-    author="D. T. Hoang and P. M. Long and J. S. Vitter",
+    author="Dzung T. Hoang and Philip M. Long and Jeffrey Scott Vitter",
     title="Rate-Distortion Optimizations for Motion Estimation in Low-Bit-Rate Video Coding",
     booktitle="Proc.\ SPIE 2668, Digital Video Compression: {A}lgorithms and Technologies 1996",
     year=1996,
     pages="18--27",
     URL="https://doi.org/10.1117/12.235433",
+}
+
+@techreport{
+    CS95TR16,
+    author="Dzung T. Hoang and Philip M. Long and Jeffrey Scott Vitter",
+    title="Rate-Distortion Optimizations for Motion Estimation in Low-Bit-Rate Video Coding",
+    institution="Duke University, Dept. of Computer Science",
+    number="CS-1995-16",
+    year=1995
 }
 ```
 
@@ -230,6 +240,7 @@ We present and compare methods for choosing motion vectors for block-based motio
 ### [Lexicographic Bit Allocation for MPEG Video (Journal)](jvcir97.pdf)
 ### [Lexicographic Bit Allocation for MPEG Video Coding (ICIP'97)](icip97a.pdf)
 ### [A Lexicographic Framework for MPEG Rate Control (DCC'97)](dcc97.pdf)
+### [Lexicographically Optimal Rate Control for Video Coding with MPEG Buffer Constraints (TechRept)](cs-1996-02.pdf)
 
 We consider the problem of allocating bits among pictures in an MPEG video coder to equalize the visual quality of the coded pictures, while meeting buffer and channel constraints imposed by the MPEG Video Buffering Verifier. We address this problem within a framework that consists of three components: 1) a bit production model for the input pictures, 2) a set of bit-rate constraints imposed by the Video Buffering Verifier, and 3) a novel lexicographic criterion for optimality. Under this framework, we derive simple necessary and sufficient conditions for optimality that lead to efficient algorithms.
 
@@ -283,6 +294,15 @@ We consider the problem of allocating bits among pictures in an MPEG video coder
   timestamp = {Wed, 20 Jun 2018 17:25:39 +0200},
   biburl    = {https://dblp.org/rec/bib/conf/dcc/HoangLV97},
   bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@techreport{
+    CS96TR02,
+    author = "Dzung T. Hoang and Elliot L. Linzer and Jeffrey Scott Vitter",
+    title="Lexicographically Optimal Rate Control for Video Coding with MPEG Buffer Constraints",
+    institution="Duke University, Dept. of Computer Science",
+    number="CS-1996-02",
+    year=1996
 }
 ```
 
