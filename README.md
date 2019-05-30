@@ -1,6 +1,57 @@
 # Research Papers
 This repository is a collection of pre-prints of my published research papers.
 
+## Sequence Alignment / Custom Computing Machines
+
+### [A Systolic Array for the Sequence Alignment Problem](cs92-22.pdf)
+
+This report introduces a new systolic algorithm for the sequence alignment problem. This work builds upon an existing systolic array for computing the edit distance between two sequences. The alignment array is meant to be used as the second phase in a two-phase design with a modified edit distance array serving as the first phase. An implementation on the SPLASH programmable logic array is described. Because of the extensive pipelining in the systolic array, computing an alignment on the array takes that same amount of time as computing just the edit distance. Compared to conventional computers, SPLASH implementation performs several orders of magnitude faster. 
+
+```
+@techreport{
+    CS92TR22,
+    author="D. T. Hoang",
+    title="A Systolic Array for the Sequence Alignment Problem",
+    institution="Brown University, Dept. of Computer Science",
+    number="CS-92-22",
+    year=1992
+}
+```
+
+### [FPGA Implementation of Systolic Sequence Alignment](fpl92.pdf)
+
+This paper describes an implementation of a novel systolic array for sequence alignment on the SPLASH reconfigurable logic array. The systolic array operates in two phases. In the first phase, a sequence comparison array due to Lopresti is used to compute a matrix of distances which is stored in local RAM. In the second phase, the stored distances are used by the alignment array to produce a binary encoding of the sequence alignment. Preliminary benchmarks show that the SPLASH implementation performs several orders of magnitude faster than implementation on supercomputers.
+
+```
+@incollection{
+    FPL92,
+    author="D. T. Hoang and D. P. Lopresti",
+    title="FPGA Implementation of Systolic Sequence Alignment",
+    booktitle="Field-Programmable Gate Arrays: Architecture and Tools for Rapid Prototyping. FPL 1992",
+    editor="Herbert Gr{\"u}nbacher and Reiner W. Hartenstein",
+    year=1992,
+    pages="183--191",
+    publisher="Springer-Verlag",
+    URL="https://doi.org/10.1007/3-540-57091-8_43",
+}
+```
+
+### [Searching Genetic Databases on Splash 2](fccm93.pdf)
+
+In this paper, we describe two systolic arrays for computing the edit distance between two genetic sequences using a well-known dynamic programming algorithm. The systolic arrays have been implemented for the Splash 2 programmable logic array, and are intended to be used for database searching. Simulations indicate that that the faster Splash 2 implementation can search a database at a rate of 12 million characters per second, several orders of magnitude faster than implementations of the dynamic programming algorithm on conventional computers.
+
+```
+@inproceedings{
+    FCCM93,
+    author="D. T. Hoang and D. P. Lopresti",
+    title="Searching Genetic Databases on Splash 2",
+    booktitle="Proceedings 1993 IEEE Workshop on Field-Programmable Custom Computing Machines",
+    publisher="IEEE",
+    year=1993,
+    pages="185--192",
+}
+```
+
 ## Text Compression
 
 ### [Multiple-Dictionary Compression using Partial Matching](dcc95.pdf)
@@ -9,14 +60,14 @@ Motivated by the desire to find text compressors that compress better than exist
 
 ```
 @inproceedings{
-HLV95b,
-author="D. T. Hoang and P. M. Long and J. S. Vitter",
-title="Multiple-Dictionary Compression using Partial Matching",
-booktitle="Proceedings 1995 Data Compression Conference",
-publisher="IEEE Computer Society Press",
-month=mar,
-year=1995
-pages="272--281",
+    HLV95b,
+    author="D. T. Hoang and P. M. Long and J. S. Vitter",
+    title="Multiple-Dictionary Compression using Partial Matching",
+    booktitle="Proceedings 1995 Data Compression Conference",
+    publisher="IEEE Computer Society Press",
+    month=mar,
+    year=1995
+    pages="272--281",
 }
 ```
 
@@ -26,32 +77,32 @@ Motivated by the desire to find text compressors that compress better than exist
 
 ```
 @article{
-HLV99DictionarySelection,
-author="D. T. Hoang and P. M. Long and J. S. Vitter",
-title="Dictionary Selection using Partial Matching",
-journal="Information Sciences",
-volume="119",
-number="1--2",
-year=1999,
-pages="57--72",
+    HLV99DictionarySelection,
+    author="D. T. Hoang and P. M. Long and J. S. Vitter",
+    title="Dictionary Selection using Partial Matching",
+    journal="Information Sciences",
+    volume="119",
+    number="1--2",
+    year=1999,
+    pages="57--72",
 }
 ```
 
 ## Video Compression
 
 ### [Explicit Bit Minimization for Motion-Compensated Video Coding](dcc94.pdf)
-We compare methods for choosing motion vectors for motion-compensated video compression. Our primary focus is on videophone and videoconferencing applications, where very low bit rates are necessary, where the motion is usually limited, and where the frames must be coded in the order they are generated. We provide evidence, using established benchmark videos of this type, that choosing motion vectors to minimize codelength subject to (implicit) constraints on quality yields substantially better rate-distortion tradeoffs than minimizing notions of prediction error. We illustrate this point using an algorithm within the $p \times 64$ standard. We show that using quadtrees to code the motion vectors in conjunction with explicit codelength minimization yields further improvement. We describe a dynamic-programming algorithm for choosing a quadtree to minimize the codelength.
+We compare methods for choosing motion vectors for motion-compensated video compression. Our primary focus is on videophone and videoconferencing applications, where very low bit rates are necessary, where the motion is usually limited, and where the frames must be coded in the order they are generated. We provide evidence, using established benchmark videos of this type, that choosing motion vectors to minimize codelength subject to (implicit) constraints on quality yields substantially better rate-distortion tradeoffs than minimizing notions of prediction error. We illustrate this point using an algorithm within the Px64 standard. We show that using quadtrees to code the motion vectors in conjunction with explicit codelength minimization yields further improvement. We describe a dynamic-programming algorithm for choosing a quadtree to minimize the codelength.
 
 ```
 @inproceedings{
-HLV94,
-author="D. T. Hoang and P. M. Long and J. S. Vitter",
-title="Explicit Bit-Minimization for Motion-Compensated Video Coding",
-booktitle="Proceedings 1994 Data Compression Conference",
-publisher="IEEE Computer Society Press",
-month=mar,
-year=1994,
-pages="175--184"
+    HLV94,
+    author="D. T. Hoang and P. M. Long and J. S. Vitter",
+    title="Explicit Bit-Minimization for Motion-Compensated Video Coding",
+    booktitle="Proceedings 1994 Data Compression Conference",
+    publisher="IEEE Computer Society Press",
+    month=mar,
+    year=1994,
+    pages="175--184"
 }
 ```
 
@@ -62,14 +113,14 @@ provided for coders that operate within the H.261 standard.
 
 ```
 @inproceedings{
-HLV96b,
-author="D. T. Hoang and P. M. Long and J. S. Vitter",
-title="Efficient Cost Measures for Motion Compensation at Low Bit Rates",
-booktitle="Proceedings 1996 Data Compression Conference",
-publisher="IEEE Computer Society Press",
-pages="102--111",
-month=mar,
-year=1996
+    HLV96b,
+    author="D. T. Hoang and P. M. Long and J. S. Vitter",
+    title="Efficient Cost Measures for Motion Compensation at Low Bit Rates",
+    booktitle="Proceedings 1996 Data Compression Conference",
+    publisher="IEEE Computer Society Press",
+    pages="102--111",
+    month=mar,
+    year=1996
 }
 ```
 
@@ -79,14 +130,13 @@ We make a case that taking the number of bits to code each motion vector into ac
 
 ```
 @inproceedings{
-HLV96a,
-author="D. T. Hoang and P. M. Long and J. S. Vitter",
-title="Rate-Distortion Optimizations for Motion Estimation in Low-Bit-Rate Video Coding",
-booktitle="Proc.\ SPIE 2668, Digital Video Compression: {A}lgorithms and Technologies 1996",
-year=1996,
-pages="18--27",
-doi="10.1117/12.235433",
-URL="https://doi.org/10.1117/12.235433",
+    HLV96a,
+    author="D. T. Hoang and P. M. Long and J. S. Vitter",
+    title="Rate-Distortion Optimizations for Motion Estimation in Low-Bit-Rate Video Coding",
+    booktitle="Proc.\ SPIE 2668, Digital Video Compression: {A}lgorithms and Technologies 1996",
+    year=1996,
+    pages="18--27",
+    URL="https://doi.org/10.1117/12.235433",
 }
 ```
 
@@ -96,16 +146,15 @@ We present and compare methods for choosing motion vectors for block-based motio
 
 ```
 @article{
-HLV98EfficientMotionEstimation,
-author="D. T. Hoang and P. M. Long and J. S. Vitter",
-title="Efficient Cost Measures for Motion Estimation at Low Bit Rates",
-journal="IEEE Trans. on Circuit and Systems for Video Technology",
-volume="8",
-number="4",
-year=1998,
-pages="488--500",
-doi="10.1109/76.709413",
-URL="https://doi.org/10.1109/76.709413",
+    HLV98EfficientMotionEstimation,
+    author="D. T. Hoang and P. M. Long and J. S. Vitter",
+    title="Efficient Cost Measures for Motion Estimation at Low Bit Rates",
+    journal="IEEE Trans. on Circuit and Systems for Video Technology",
+    volume="8",
+    number="4",
+    year=1998,
+    pages="488--500",
+    URL="https://doi.org/10.1109/76.709413",
 }
 ```
 
@@ -115,15 +164,30 @@ We consider the problem of allocating bits among pictures in an MPEG video coder
 
 ```
 @article{
-HLiV98Lexicographic,
-author="D. T. Hoang and E. Linzer and J. S. Vitter",
-title="Lexicographic Bit Allocation for MPEG Video",
-journal="Journal of Visual Communication and Image Representation",
-volume="8",
-number="4",
-year=1997,
-pages="384--404",
-URL="https://doi.org/10.1006/jvci.1997.0376",
+    HLiV98Lexicographic,
+    author="D. T. Hoang and E. Linzer and J. S. Vitter",
+    title="Lexicographic Bit Allocation for MPEG Video",
+    journal="Journal of Visual Communication and Image Representation",
+    volume="8",
+    number="4",
+    year=1997,
+    pages="384--404",
+    URL="https://doi.org/10.1006/jvci.1997.0376",
+}
+```
+
+## Ph.D. Thesis
+
+### [Fast and Efficient Algorithms for Text and Video Compression](thesis97.pdf)
+
+There is a tradeoff between the speed of a data compressor and the level of compression it can achieve. Improving compression generally requires more computation; and improving speed generally sacrifices compression. In this thesis, we examine a range of tradeoffs for text and video. In text compression, we attempt to bridge the gap between statistical techniques, which exhibit a greater amount of compression but are computationally intensive, and dictionary-based techniques, which give less compression but run faster. We combine the context modeling of statistical coding with dynamic dictionaries into a hybrid coding scheme we call Dictionary by Partial Matching. In low-bit-rate video compression, we explore the speed-compression tradeoffs with a range of motion estimation techniques operating within the H.261 video coding standard. We initially consider algorithms that explicitly minimizes bit rate and combination of rate and distortion. With insights gained from the explicit minimization algorithms, we propose a new technique for motion estimation that minimizes an efficiently computed heuristic function. The new technique gives compression efficiency comparable to the explicit-minimization algorithms while running much faster. We also explore bit-minimization in a non-standard quadtree-based video coder that codes motion information hierarchically using variable-sized blocks. For video coding at medium-to-high bit rates, we propose a framework that casts rate control as a resource allocation problem with continuous variables, non-linear constraints, and a novel lexicographic optimality criterion motivated for near-constant-quality video. With this framework, we redefine the concept of efficiency to better reflect the constancy in quality generally desired from a video coder. Rigorous analysis within this framework reveals elegant conditions for optimality, which leads to polynomial-time algorithms. Simulation studies confirm the theoretical analysis and produce encodings that are more constant in quality than that achieved with existing rate control methods. As evidence of the flexibility of the framework, we show how to extend it to allocate bits among multiple variable-bit-rate bitstreams for transmission over a constant-bit-rate channel.
+
+```
+@phdthesis{Hoang97,
+    title="Fast and Efficient Algorithms for Text and Video Compression",
+    school="Brown University",
+    author="Dzung T. Hoang",
+    year=1997,
 }
 ```
 
