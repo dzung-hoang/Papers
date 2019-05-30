@@ -267,6 +267,23 @@ We consider the problem of allocating bits among pictures in an MPEG video coder
   biburl    = {https://dblp.org/rec/bib/conf/icip/HoangVL97},
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
+
+@inproceedings{DBLP:conf/dcc/HoangLV97,
+  author    = {Dzung T. Hoang and
+               Elliot L. Linzer and
+               Jeffrey Scott Vitter},
+  title     = {A Lexicographic Framework for {MPEG} Rate Control},
+  booktitle = {Proceedings of the 7th Data Compression Conference {(DCC} '97), Snowbird,
+               Utah, USA, March 25-27, 1997.},
+  pages     = {101--110},
+  year      = {1997},
+  crossref  = {DBLP:conf/dcc/1997},
+  url       = {https://doi.org/10.1109/DCC.1997.581982},
+  doi       = {10.1109/DCC.1997.581982},
+  timestamp = {Wed, 20 Jun 2018 17:25:39 +0200},
+  biburl    = {https://dblp.org/rec/bib/conf/dcc/HoangLV97},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
 ```
 
 ### [Multiplexing VBR Video Sequences onto a CBR Channel with Lexicographic Optimization](icip97b.pdf)
