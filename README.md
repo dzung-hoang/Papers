@@ -52,6 +52,9 @@ In this paper, we describe two systolic arrays for computing the edit distance b
 }
 ```
 
+*This paper was recognized as one of the 25 most significant papers from the first 20 years of IEEE International Symposium on Field-Programmable Custom Computing Machines (FCCM).*
+http://www.tcfpga.org/fccm20/fccm20endorsements.pdf
+
 ## Text Compression
 
 ### [Multiple-Dictionary Compression using Partial Matching](dcc95.pdf)
