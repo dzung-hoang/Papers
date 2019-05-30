@@ -127,7 +127,7 @@ provided for coders that operate within the H.261 standard.
 }
 ```
 
-### [Rate-Distortion Optimizations for Motion Estimation in Low-Bitrate Video Coding](dvm96)
+### [Rate-Distortion Optimizations for Motion Estimation in Low-Bitrate Video Coding](dvm96.pdf)
 
 We make a case that taking the number of bits to code each motion vector into account when estimating motion for video compression results in significantly better performance at low bit rates, using simulation studies on established benchmark videos. First, by modifying a "vanilla" implementation of the H.261 standard, we show that choosing motion vectors explicitly to minimize rate (in a greedy manner), subject to implicit constraints on distortion, yields better rate-distortion tradeoffs than minimizing notions of prediction error. Locally minimizing a linear combination of rate and distortion results in further improvements. Using a heuristic function of the prediction error and the motion vector code-length results in compression performance comparable to the more computationally intensive coders while requiring a practically small amount of computation.  We also show that making coding control decisions to minimize rate yields further improvements.
 
