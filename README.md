@@ -323,6 +323,7 @@ We apply a novel lexicographic framework for bit allocation to the multiplexing 
 ```
 
 ### [Real-Time VBR Rate Control of MPEG Video based upon Lexicographic Bit Allocation (Journal)](rti99.pdf)
+### [Real-Time VBR Rate Control of MPEG Video based upon Lexicographic Bit Allocation (DCC'99)](dcc99.pdf)
 
 The MPEG-2 Video Standard describes in detail a bitstream syntax and a decoder model but leaves many details of the encoding process unspecified, such as encoder bit rate control. The standard defines a hypothetical decoder model, called the Video Buffering Verifier (VBV), that can operate in either constant-bit-rate (CBR) or variable-bit-rate (VBR) modes. In this paper, we present a low-complexity algorithm for VBR rate control suitable for low-delay, real-time applications. The algorithm is motivated by recent results in lexicographic optimal bit allocation. The basic algorithm switches between constant-quality and constant-bit-rate modes based on changes in the fullness of the VBV buffer. We show how the algorithm can be applied either to produce a desired quality level or to meet a global bit budget. Simulation results show that the algorithm compares favorably to the optimal VBR algorithm.
 
