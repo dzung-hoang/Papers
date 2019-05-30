@@ -228,7 +228,8 @@ We present and compare methods for choosing motion vectors for block-based motio
 ```
 
 ### [Lexicographic Bit Allocation for MPEG Video (Journal)](jvcir97.pdf)
-### [Lexicographic Bit Allocation for MPEG Video (ICIP'97)](icip97a.pdf)
+### [Lexicographic Bit Allocation for MPEG Video Coding (ICIP'97)](icip97a.pdf)
+### [A Lexicographic Framework for MPEG Rate Control (DCC'97)](dcc97.pdf)
 
 We consider the problem of allocating bits among pictures in an MPEG video coder to equalize the visual quality of the coded pictures, while meeting buffer and channel constraints imposed by the MPEG Video Buffering Verifier. We address this problem within a framework that consists of three components: 1) a bit production model for the input pictures, 2) a set of bit-rate constraints imposed by the Video Buffering Verifier, and 3) a novel lexicographic criterion for optimality. Under this framework, we derive simple necessary and sufficient conditions for optimality that lead to efficient algorithms.
 
