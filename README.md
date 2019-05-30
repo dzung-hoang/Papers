@@ -43,7 +43,7 @@ In this paper, we describe two systolic arrays for computing the edit distance b
 ```
 @inproceedings{
     FCCM93,
-    author="D. T. Hoang and D. P. Lopresti",
+    author="D. T. Hoang",
     title="Searching Genetic Databases on Splash 2",
     booktitle="Proceedings 1993 IEEE Workshop on Field-Programmable Custom Computing Machines",
     publisher="IEEE",
