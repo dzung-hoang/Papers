@@ -99,7 +99,7 @@ We present and compare methods for choosing motion vectors for block-based motio
 HLV98EfficientMotionEstimation,
 author="D. T. Hoang and P. M. Long and J. S. Vitter",
 title="Efficient Cost Measures for Motion Estimation at Low Bit Rates",
-journal="IEEE Trans.\ on Circuit and Systems for Video Technology",
+journal="IEEE Trans. on Circuit and Systems for Video Technology",
 volume="8",
 number="4",
 year=1998,
@@ -111,18 +111,21 @@ URL="https://doi.org/10.1109/76.709413",
 
 ### [Lexicographic Bit Allocation for MPEG Video](jvcir97.pdf)
 
-D. T. Hoang, E. Linzer, and J. S. Vitter, "Lexicographic Bit Allocation for MPEG Video," Special issue on high-fidelity media processing in Journal of Visual Communication and Image Representation, 8(4), December 1997, 384-404. An extended abstract appears in Proceedings of the 1997 IEEE International Conference on Image Processing (ICIP'97), Santa Barbara, CA, October 1997. A shorter version appears in "A Lexicographic Framework for MPEG Rate Control," Proceedings of the 1997 IEEE Data Compression Conference (DCC '97), Snowbird, UT, March 1997, 101-110.
+We consider the problem of allocating bits among pictures in an MPEG video coder to equalize the visual quality of the coded pictures, while meeting buffer and channel constraints imposed by the MPEG Video Buffering Verifier. We address this problem within a framework that consists of three components: 1) a bit production model for the input pictures, 2) a set of bit-rate constraints imposed by the Video Buffering Verifier, and 3) a novel lexicographic criterion for optimality. Under this framework, we derive simple necessary and sufficient conditions for optimality that lead to efficient algorithms.
 
-D. T. Hoang and J. S. Vitter. Efficient Algorithms for MPEG Video Compression, John Wiley & Sons, New York, NY, 2002. The interplay between compression and buffer control algorithms in order to maximize network performance and achieve high visual clarity has shown great results, and Efficient Algorithms for MPEG Video Compression is the first book dedicated to the subject.
-
-Video belongs to a class of information called continuous media. Continuous media is characterized by the essentially continuous manner in which the information is presented. This is in contrast to discrete media, in which there is no essential temporal component. Text, images, and graphics are examples of discrete media, while movies, sound, and computer animation are examples of continuous media. Even though a slide show is a time-based presentation of images, it is not a continuous medium since each image is viewed as an individual item. On the other hand, a video clip, while also consisting of a sequence of images, is a continuous medium since each image is perceived in the context of past and future images.
-
-With continuous media, therefore, the temporal dimension becomes important. For example, a video sequence compressed with a constant image quality for every frame is often more desirable than one in which the image quality varies noticeably over time. However, because the compressibility of individual frames varies over time, maintaining a constant image quality results in a variation in coding rate over time. The process of controlling the coding rate to meet the requirements of a transmissions channel or storage device, while maintaining a desired level of quality, is called bit rate control. In this monograph, we focus on the rate control of compressed video. Specifically, we present a new framework for allocating bits to the compression of pictures in a video sequence.
-
-Existing optimal rate control techniques typically regulate the coding rate to minimize a sum-distortion measure. While these techniques can leverage the wealth of tools from least-mean-square optimization theory, they do not guarantee constant-quality video, an objective often mentioned in the literature. In this book, we develop a framework that casts rate control as a resource allocation problem with continuous variables, nonlinear constraints, and a novel lexicographic optimality criterion that is motivated for uniform video quality. With the lexicographic criterion, we propose a new concept of coding efficiency to better reflect the constancy in quality that is generally desired from a video coder.
-
-Rigorous analysis within this framework reveals a set of necessary and sufficient conditions for optimality for coding at both constant and variable bit rates. With these conditions, we are able to construct polynomial-time algorithms for optimal bit rate control. Experimental implementations of these algorithms confirm the theoretical analysis and produce encodings that are more uniform in quality than that achieved with existing rate control methods. As evidence of the generality and flexibility of the framework, we show how to extend the framework to allocate bits among multiple variable bit rate bitstreams that are to be transmitted over a common constant bit rate channel and to encompass the case of discrete variables.
+```
+@article{
+HLiV98Lexicographic,
+author="D. T. Hoang and E. Linzer and J. S. Vitter",
+title="Lexicographic Bit Allocation for MPEG Video",
+journal="Journal of Visual Communication and Image Representation",
+volume="8",
+number="4",
+year=1997,
+pages="384--404",
+URL="https://doi.org/10.1006/jvci.1997.0376",
+}
+```
 
 ## License
-[CC-BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)
-
+The papers included here are licensed under [CC-BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)
