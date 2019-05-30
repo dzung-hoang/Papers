@@ -161,7 +161,8 @@ We present and compare methods for choosing motion vectors for block-based motio
 }
 ```
 
-### [Lexicographic Bit Allocation for MPEG Video](jvcir97.pdf)
+### [Lexicographic Bit Allocation for MPEG Video (Journal)](jvcir97.pdf)
+### [Lexicographic Bit Allocation for MPEG Video (ICIP'97)](icip97a.pdf)
 
 We consider the problem of allocating bits among pictures in an MPEG video coder to equalize the visual quality of the coded pictures, while meeting buffer and channel constraints imposed by the MPEG Video Buffering Verifier. We address this problem within a framework that consists of three components: 1) a bit production model for the input pictures, 2) a set of bit-rate constraints imposed by the Video Buffering Verifier, and 3) a novel lexicographic criterion for optimality. Under this framework, we derive simple necessary and sufficient conditions for optimality that lead to efficient algorithms.
 
@@ -176,6 +177,46 @@ We consider the problem of allocating bits among pictures in an MPEG video coder
     year=1997,
     pages="384--404",
     URL="https://doi.org/10.1006/jvci.1997.0376",
+}
+
+@inproceedings{DBLP:conf/icip/HoangVL97,
+  author    = {Dzung T. Hoang and
+               Jeffrey Scott Vitter and
+               Elliot L. Linzer},
+  title     = {Lexicographic Bit Allocation for {MPEG} Video Coding},
+  booktitle = {Proceedings 1997 International Conference on Image Processing, {ICIP}
+               '97, Santa Barbara, California, USA, October 26-29, 1997},
+  pages     = {322--325},
+  year      = {1997},
+  crossref  = {DBLP:conf/icip/1997},
+  url       = {https://doi.org/10.1109/ICIP.1997.647771},
+  doi       = {10.1109/ICIP.1997.647771},
+  timestamp = {Thu, 25 May 2017 00:40:36 +0200},
+  biburl    = {https://dblp.org/rec/bib/conf/icip/HoangVL97},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+```
+
+### [Multiplexing VBR Video Sequences onto a CBR Channel with Lexicographic Optimization](icip97b.pdf)
+
+We apply a novel lexicographic framework for bit allocation to the multiplexing of multiple VBR video streams onto a single CBR channel. In the lexicographic framework, the maximum distortion is minimized, then the second highest distortion, and so on, resulting in nearly constant quality. With a suitably constructed multiplexing model, we show that the multiplexing problem reduces to a single-stream CBR bit allocation problem, to which we apply the lexicographic framework. This method has applications for video servers, especially for near-video-on-demand.
+
+```
+@inproceedings{DBLP:conf/icip/HoangV97,
+  author    = {Dzung T. Hoang and
+               Jeffrey Scott Vitter},
+  title     = {Multiplexing {VBR} Video Sequences onto a {CBR} Channel with Lexicographic
+               Optimization},
+  booktitle = {Proceedings 1997 International Conference on Image Processing, {ICIP}
+               '97, Santa Barbara, California, USA, October 26-29, 1997},
+  pages     = {369--372},
+  year      = {1997},
+  crossref  = {DBLP:conf/icip/1997},
+  url       = {https://doi.org/10.1109/ICIP.1997.647783},
+  doi       = {10.1109/ICIP.1997.647783},
+  timestamp = {Thu, 25 May 2017 00:40:32 +0200},
+  biburl    = {https://dblp.org/rec/bib/conf/icip/HoangV97},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 ```
 
