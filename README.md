@@ -162,32 +162,6 @@ We compare methods for choosing motion vectors for motion-compensated video comp
 }
 ```
 
-### [Efficient Cost Measures for Motion Compensation at Low Bit Rates](dcc96.pdf)
-
-We present and compare methods for choosing motion vectors for block-based motion-compensated video coding. The primary focus is on videophone and video-conferencing applications, where low bit rates are necessary, where motion is usually limited, and where the amount of computation is also limited. In a typical block-based motion-compensated video coding system, motion vectors are transmitted along with a lossy encoding of the residuals. As the bit rate decreases, the proportion required to transmit the motion vectors increases. We provide experimental evidence that choosing motion vectors explicitly to minimize rate (including motion vector coding), subject to implicit constraints on distortion, yields better rate-distortion tradeoffs than minimizing some measure of prediction error. Minimizing a combination of rate and distortion yields further improvements. Although these explicit-minimization schemes are computationally intensive, they provide invaluable insight which we use to develop practical algorithms. We show that minimizing a simple heuristic function of the prediction error and the motion vector code-length results in rate-distortion performance comparable to explicit-minimization schemes while being computationally feasible. Experimental results are 
-provided for coders that operate within the H.261 standard.
-
-```
-@inproceedings{DBLP:conf/dcc/HoangLV96,
-  author    = {Dzung T. Hoang and
-               Philip M. Long and
-               Jeffrey Scott Vitter},
-  title     = {Efficient Cost Measures for Motion Compensation at Low Bit Rates (Extended
-               Abstract)},
-  booktitle = {Proceedings of the 6th Data Compression Conference {(DCC} '96), Snowbird,
-               Utah, USA, March 31 - April 3, 1996.},
-  pages     = {102--111},
-  year      = {1996},
-  crossref  = {DBLP:conf/dcc/1996},
-  url       = {https://doi.org/10.1109/DCC.1996.488315},
-  doi       = {10.1109/DCC.1996.488315},
-  timestamp = {Wed, 20 Jun 2018 17:25:13 +0200},
-  biburl    = {https://dblp.org/rec/bib/conf/dcc/HoangLV96},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
-}
-
-```
-
 ### [Rate-Distortion Optimizations for Motion Estimation in Low-Bitrate Video Coding (DVC'96)](dvc96.pdf)
 ### [Rate-Distortion Optimizations for Motion Estimation in Low-Bitrate Video Coding (TechRept)](cs-1995-16.pdf)
 
@@ -214,7 +188,8 @@ We make a case that taking the number of bits to code each motion vector into ac
 }
 ```
 
-### [Efficient Cost Measures for Motion Estimation at Low Bit Rates](itcsvt98.pdf)
+### [Efficient Cost Measures for Motion Estimation at Low Bit Rates (Journal)](itcsvt98.pdf)
+### [Efficient Cost Measures for Motion Estimation at Low Bit Rates (DCC'96)](dcc96.pdf)
 
 We present and compare methods for choosing motion vectors for block-based motion-compensated video coding. The primary focus is on videophone and videoconferencing applications, where low bit rates are necessary, where motion is usually limited, and where the amount of computation is also limited. In a typical block-based motion-compensated video coding system, motion vectors are transmitted along with a lossy encoding of the residuals. As the bit rate decreases, the proportion required to transmit the motion vectors increases. We provide experimental evidence that choosing motion vectors explicitly to minimize rate (including motion vector coding), subject to implicit constraints on distortion, yields better rate-distortion tradeoffs than minimizing some measure of prediction error. Minimizing a combination of rate and distortion yields further improvements. Although these explicit-minimization schemes are computationally intensive, they provide invaluable insight which we use to develop practical algorithms. We show that minimizing a simple heuristic function of the prediction error and the motion vector code-length results in rate-distortion performance comparable to explicit-minimization schemes while being computationally feasible. Experimental results are provided for coders that operate within the H.261 standard.
 
@@ -233,6 +208,24 @@ We present and compare methods for choosing motion vectors for block-based motio
   doi       = {10.1109/76.709413},
   timestamp = {Fri, 26 May 2017 22:51:14 +0200},
   biburl    = {https://dblp.org/rec/bib/journals/tcsv/HoangLV98},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{DBLP:conf/dcc/HoangLV96,
+  author    = {Dzung T. Hoang and
+               Philip M. Long and
+               Jeffrey Scott Vitter},
+  title     = {Efficient Cost Measures for Motion Compensation at Low Bit Rates (Extended
+               Abstract)},
+  booktitle = {Proceedings of the 6th Data Compression Conference {(DCC} '96), Snowbird,
+               Utah, USA, March 31 - April 3, 1996.},
+  pages     = {102--111},
+  year      = {1996},
+  crossref  = {DBLP:conf/dcc/1996},
+  url       = {https://doi.org/10.1109/DCC.1996.488315},
+  doi       = {10.1109/DCC.1996.488315},
+  timestamp = {Wed, 20 Jun 2018 17:25:13 +0200},
+  biburl    = {https://dblp.org/rec/bib/conf/dcc/HoangLV96},
   bibsource = {dblp computer science bibliography, https://dblp.org}
 }
 ```
